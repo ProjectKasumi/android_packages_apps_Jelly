@@ -193,6 +193,7 @@ class MainActivity : WebViewExtActivity(), SearchBarController.OnCancelListener,
                 findViewById(R.id.search_menu_cancel),
                 this)
         setUiMode()
+        applyThemeColor(mThemeColor)
         try {
             val httpCacheDir = File(cacheDir, "suggestion_responses")
             val httpCacheSize = 1024 * 1024.toLong() // 1 MiB
